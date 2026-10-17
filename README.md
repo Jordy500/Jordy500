@@ -22,6 +22,12 @@ Assistant question-réponse qui répond uniquement à partir d'une base document
 - Embeddings multilingues, avec le nom du modèle stocké dans la base vectorielle pour éviter les incohérences entre indexation et interrogation
 - Agent modérateur dédié (sortie JSON stricte) qui bloque les tentatives de prompt injection avant tout appel au LLM
 
+### ⚖️ [Assistant Code du travail : RAG sur corpus réel](https://github.com/Jordy500/Labour-code-assistant)
+Chatbot qui répond aux questions de droit du travail (congés payés, durée légale du travail) à partir des articles officiels du Code du travail, en citant ses sources.
+`Python` `ChromaDB` `sentence-transformers` `Groq` `API Légifrance`
+- Corpus réel construit par collecte automatique des articles (code.travail.gouv.fr, licence Etalab)
+- Réponses accompagnées des articles cités, pour que l'utilisateur puisse vérifier
+
 ### 📊 Dashboard KASATECH
 Tableau de bord interactif relié à une base MySQL.
 `Streamlit` `MySQL` `Python`
